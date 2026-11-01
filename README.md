@@ -80,3 +80,5 @@ daytonaa/
 ## License
 
 No license has been added yet. Add a license before allowing others to reuse, modify, or redistribute this project.
+
+Make a separate static in oroject directory and then paste the html,css and javascript file
