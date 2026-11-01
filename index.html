@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0b10">
+  <meta name="description" content="DAYTONAA — your personal data science learning university.">
+  <title>DAYTONAA · Learn. Experiment. Analyse. Build.</title>
+  <link rel="icon" href="./static/daytonaa/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./static/daytonaa/app.css">
+  <link rel="stylesheet" href="./static/daytonaa/vanilla.css">
+</head>
+<body>
+  <div class="app-frame" id="app-frame">
+    <button class="mobile-scrim" type="button" aria-label="Close navigation" data-menu-close hidden></button>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="DAYTONAA overview">
+        <span class="brand-mark"><span></span></span>
+        <span class="brand-copy"><strong>DAYTONAA</strong><small>LEARN · EXPERIMENT · ANALYSE · BUILD</small></span>
+      </a>
+      <a class="search-trigger" href="#roadmap"><span class="nav-glyph">⌕</span><span>Find a topic</span><kbd>/</kbd></a>
+      <div class="nav-scroll" id="main-navigation"></div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-streak"><span class="streak-icon">✦</span><div><strong id="sidebar-streak">0 day streak</strong><small>Keep your rhythm going</small></div><span class="side-chevron">›</span></div>
+        <div class="profile-row"><span class="avatar" id="sidebar-avatar">L</span><span class="profile-copy"><strong id="sidebar-name">Learner</strong><small>Saved in this browser</small></span><a class="icon-button tiny" href="#settings" aria-label="Settings">⚙</a></div>
+        <button class="collapse-button" type="button" data-collapse><span class="nav-glyph">⇤</span><span>Collapse sidebar</span></button>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="breadcrumb"><span>DAYTONAA</span><b>/</b><b id="breadcrumb-current">Overview</b></div>
+        <div class="topbar-actions">
+          <button class="mobile-menu icon-button" type="button" aria-label="Open navigation" data-menu-open>☰</button>
+          <a class="icon-button notification-button" href="#study-planner" aria-label="Study planner">♧</a>
+          <a class="top-avatar" href="#settings" aria-label="Profile settings" id="top-avatar">L</a>
+        </div>
+      </header>
+      <main class="content-area" id="app-content" tabindex="-1">
+        <section class="panel loading-panel"><span class="loading-orb">✦</span><span>Preparing your learning workspace…</span></section>
+      </main>
+    </div>
+  </div>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script defer src="./static/daytonaa/catalog.js"></script>
+  <script defer src="./static/daytonaa/app.js"></script>
+</body>
+</html>
